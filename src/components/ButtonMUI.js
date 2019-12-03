@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-const ButtonMUI = () => (
-    <Button variant="outlined" color="primary">
+const ButtonMUI = ({color, variant}) => (
+    <Button variant={variant} color={color} style={{
+        fontWeight: "600"
+    }}>
         Material UI
     </Button>
 );
