@@ -1,11 +1,17 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-const ButtonMUI = ({color, variant}) => (
-    <Button variant={variant} color={color} style={{
-        fontWeight: "600"
-    }}>
-        Material UI
+const ButtonMUI = ({children, color, endIcon, variant, startIcon, disabled}) => (
+    <Button 
+        color={color} 
+        disabled={disabled} 
+        endIcon={endIcon}
+        startIcon={startIcon} 
+        style={{
+            fontWeight: "600"
+        }} 
+        variant={variant} >
+        {children}
     </Button>
 );
 
