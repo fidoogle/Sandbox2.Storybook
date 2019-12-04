@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -58,5 +59,16 @@ const DiscreteSlider = ({defaultValue=20, marks=defaultmarks, step=5}) => {
         </div>
     );
 }
+
+// An object taking on a particular shape
+
+DiscreteSlider.propTypes = {
+    defaultValue: PropTypes.number,
+    marks: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string,
+        value: PropTypes.number
+    })),
+    step: PropTypes.number,
+};
 
 export default DiscreteSlider;

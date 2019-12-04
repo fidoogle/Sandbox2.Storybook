@@ -6,6 +6,7 @@ import theme from './theme';
 import ButtonMUI from './components/ButtonMUI';
 import DiscreetSliderMUI from './components/DiscreetSliderMUI';
 import RangeSliderMUI from './components/RangeSliderMUI';
+import TabMUI from './components/TabMUI';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 
@@ -44,6 +45,8 @@ function App() {
 
         <DiscreetSliderMUI></DiscreetSliderMUI>
         <RangeSliderMUI></RangeSliderMUI>
+
+        <TabMUI></TabMUI>
       </div>
     </ThemeProvider>
   );

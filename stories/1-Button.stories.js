@@ -8,7 +8,8 @@ import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: 'Button',
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+  component: ButtonMUI,
 };
 
 

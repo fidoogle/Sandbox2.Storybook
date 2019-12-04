@@ -5,8 +5,9 @@ import RangeSliderMUI from '../src/components/RangeSliderMUI';
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 export default {
-  title: 'Slider',
-  decorators: [withKnobs]
+    title: 'Slider',
+    decorators: [withKnobs],
+    component: DiscreetSliderMUI,
 };
 
 
