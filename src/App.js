@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
-import Button from './components/Button';
-import ButtonEmoji from './components/ButtonEmoji';
 import ButtonMUI from './components/ButtonMUI';
+import DiscreetSliderMUI from './components/DiscreetSliderMUI';
+import RangeSliderMUI from './components/RangeSliderMUI';
+import TabMUI from './components/TabMUI';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 
@@ -42,11 +43,10 @@ function App() {
           startIcon={<CheckCircleIcon />}
           endIcon={<CheckCircleOutlinedIcon />}>Primary Plain</ButtonMUI>
 
+        <DiscreetSliderMUI></DiscreetSliderMUI>
+        <RangeSliderMUI></RangeSliderMUI>
 
-        <Button primary>Primary</Button>
-        <Button secondary>Secondary</Button>
-        <Button normal>Normal</Button>
-        <ButtonEmoji></ButtonEmoji>
+        <TabMUI></TabMUI>
       </div>
     </ThemeProvider>
   );
